@@ -1,0 +1,868 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Provider Panel</title>
+		<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato:400,900">
+		<link href="https://fonts.googleapis.com/css?family=Suez+One" rel="stylesheet">
+
+
+		<link  id = "css" rel="stylesheet" type="text/css" href="css/ProviderQuery.css">
+        <link rel="stylesheet" type="text/css" href="css/headerfooter.css">
+		<script src="js/jquery-3.1.1.js"></script>
+
+		<script src="js/ProviderQuery.js"></script>
+        <script src="js/ProviderQuery-option.js"></script>
+        <script type="text/javascript" src="js/homepage.js"></script> 
+		<script src="js/filter.js"></script>
+
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>
+	<body>
+	    <header class="main-header">
+                <a href="./home.html" target="_blank">
+			    <div class="fulllogo">
+			    <img id= "logo" src="./Images/icons/logo.svg">
+			    <strong>FS</strong>
+			    </div>
+			    </a>
+				<div class="navigation-container">
+					<div class="bar1"></div>
+					<div class="bar2"></div>
+					<div class="bar3"></div>
+				</div>
+				<div class="dropdown">
+				<div class="dropdown-content">
+                     <a href="home.html" target="_blank">Home</a>
+                     <!-- <a href="ProviderQuery.html" target="_blank">Find a Pro</a> -->
+                </div>
+                </div>
+  </header>
+
+	<div id="ProviderQueryMainPanel">
+
+	<h2 id = "">Find a Pro</h2>
+
+	<div id="mFilter">
+		<!-- <div class="mBase"> -->
+		<fieldset class="mBase">
+		    <legend>Service & Location</legend>
+
+			<div class="mCategory">
+				<div class="mTitle form-title">Choose your service</div>
+
+				<div class="mCategoryBody">
+				
+					<div class="mMaInCategory">
+						<span class="dropdownIcon"></span>
+						<select class="mDropdown form-control">
+	        				<option value="pets">Pets</option>
+	        				<option value="crafts">Crafts</option>
+	        				<option value="legal">Legal</option>
+	        				<option value="photography">Photography</option>
+	        			</select>
+						
+					</div>
+
+					<div class="mSubCategory">
+						<span class="dropdownIcon"></span>
+						<select class="mDropdown form-control" id="subCat">
+	        				<option value="dog-walking">Dog Walking</option>
+	        				<option value="dog-sitting">Dog Sitting</option>
+	        				<option value="dog-training">Dog Training</option>
+	        				<option value="dog-grooming">Dog Grooming</option>
+	        			</select>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="mLocation">
+				<div class="mTitle form-title">Near</div>
+
+				<div class="mLocationtInput">
+					<input type="text" class="mTextinput form-control" name="location" placeholder="Zip Code or Address" value="" autocomplete="off">
+				</div>
+				
+			</div>
+		<!-- </div> -->
+		</fieldset> 
+		<!-- <div class="mMain"> -->
+		<fieldset class="mMain">
+		    <legend>Date & Time</legend>
+			<div class="mDate">
+
+	            <div class="start-date">
+					<div class="mTitle form-title">Start Date</div>
+
+	                <input type="date" class="form-control" name="start_date" placeholder="Drop off" autocomplete="off" value="">
+	                <span class="">
+	                    <span class=""></span>
+	                </span>
+	            </div>
+	            <div class="end-date">
+					<div class="mTitle form-title">End Date</div>
+	                <input type="date" class="form-control" name="end_date" placeholder="Pick up" autocomplete="off"  value="">
+	                <span class="">
+	                    <span class=""></span>
+	                </span>
+	            </div>
+
+			</div>
+
+
+			<div class="mWeekSup">
+				<div class="mWeek">
+										<label class="labelCheck">
+		        		<input type="checkbox" name="monday" class="" id = "w0">MO
+		    		</label>
+					<label class="labelCheck">
+		        		<input type="checkbox" name="tuesday" class="" id = "w1">TU
+		    		</label>
+					<label class="labelCheck">
+		        		<input type="checkbox" name="wednesday" class="" id = "w2">WE
+		    		</label>
+					<label class="labelCheck">
+		        		<input type="checkbox" name="thursday" class="" id = "w3">TH
+		    		</label>
+					<label class="labelCheck">
+		        		<input type="checkbox" name="friday" class="" id = "w4">FR
+		    		</label>
+					<label class="labelCheck">
+		        		<input type="checkbox" name="saturday" class="" id = "w5">SA
+		    		</label>
+					<label class="labelCheck">
+		        		<input type="checkbox" name="sunday" class="" id = "w6">SU
+		    		</label>
+
+		    	</div>
+	    	</div>
+
+			<div class="mTimeSup">
+
+		    	<div class="mTime">
+		    		<label class="labelCheck">
+	                	<input type="radio" name="timeAva" value="morning"  id = "t0" checked="">
+	                	<span class="">6am-11am</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="timeAva" value="noon"  id = "t1" checked="">
+	                	<span class="">11am-3pm</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="timeAva" value="night" id = "t2"  checked="">
+	                	<span class="">3pm-10pm</span>
+	            	</label>
+		    	</div>
+	    	</div>
+
+		<!-- </div> -->
+		</fieldset> 
+
+
+
+		<div class="mMoreFliter">
+			<a id="moreFilter">
+				More Filter 
+			</a>
+			<div class="moreIcon">
+				<img id="moreIcon" src="Images/icons/add.svg">
+			</div>
+		</div>
+		<!-- <div class="mAdvanced"> -->
+		<fieldset class="mAdvanced">
+		    <legend>Additional Information</legend>
+			<div class="filterHead">
+				<div class="cancelBtn">
+					Cancel
+				</div>
+
+
+				<div class="clearFilter">
+					Clear all
+				</div>
+
+				
+
+			</div>
+
+			<div class="mDogWeight">
+				<div class="mDogWeight-title form-title">
+					How large is your dog in lbs?
+				</div>
+
+				<div class="mDogWeight-box">
+					<label class="labelCheck">
+		        		<input id="l1" type="checkbox" name="small" class="">Small<br/>0-15
+		    		</label>
+					<label class="labelCheck">
+		        		<input id="l2" type="checkbox" name="medium" class="">Medium<br/>16-40
+		    		</label>
+					<label class="labelCheck">
+		        		<input id="l3" type="checkbox" name="large" class="">Large<br/>41-100
+		    		</label>
+					<label class="labelCheck">
+		        		<input id="l4" type="checkbox" name="gaint" class="">Giant<br/>101+
+		    		</label>
+	    		</div>
+
+	    	</div>
+			
+			<div class="mDogNum howmanydog">
+				<div class="mDogNum-title form-title">
+					How many dogs do you have?
+				</div>
+
+				<div class="mDogNum-box">
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogNum" value="1dog" checked="">
+	                	<span class="">1 Dog</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogNum" value="2dog" checked="">
+	                	<span class="">2 Dogs</span>
+	            	</label>
+		    		<label class="labelCheck" >
+	                	<input type="radio" name="dogNum" value="3dog" checked="">
+	                	<span class="">3+ Dogs</span>
+	            	</label>
+	    		</div>
+	    	</div>
+
+
+			<div class="mDogNum dogWalkNum">
+				<div class="mDogNum-title form-title dogWalkNum-title">
+					How many walks per day do you need?
+				</div>
+
+				<div class="mDogNum-box dogWalkNum-box">
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogWalkNum" value="1dog" checked="">
+	                	<span class="">1 Walk</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogWalkNum" value="2dog" checked="">
+	                	<span class="">2 Walks</span>
+	            	</label>
+		    		<label class="labelCheck" >
+	                	<input type="radio" name="dogWalkNum" value="3dog" checked="">
+	                	<span class="">3+ Walks</span>
+	            	</label>
+	    		</div>
+	    	</div>
+
+			<div class="mDogNum dogTrainNum">
+				<div class="mDogNum-title form-title">
+					How many dogs would you like trained?
+				</div>
+
+				<div class="mDogNum-box dogTrainNum-box">
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogTrainNum" value="1dog" checked="">
+	                	<span class="">1 Dog</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogTrainNum" value="2dog" checked="">
+	                	<span class="">2 Dogs</span>
+	            	</label>
+
+	    		</div>
+	    	</div>
+
+			<div class="mDogNum  travelOpt">
+				<div class="mDogNum-title form-title">
+					How would you like to meet with the pro?
+				</div>
+
+				<div class="mDogNum-box  travelOpt">
+		    		<label class="labelCheck">
+	                	<input type="radio" name="travelOpt" value="1dog" checked="">
+	                	<span class="">I travel</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="travelOpt" value="2dog" checked="">
+	                	<span class="">Pro travels</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="travelOpt" value="2dog" checked="">
+	                	<span class="">Flexible</span>
+	            	</label>
+	    		</div>
+	    	</div>
+
+			<div class="mDogNum dogTrainPack interestedIn">
+				<div class="mDogNum-title form-title">
+					Which of the training packages are you interested in?
+				</div>
+
+				<div class="mDogNum-box dogTrainPack-box">
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogTrainPack" value="" checked="">
+	                	<span class="">Puppy training</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogTrainPack" value="" checked="">
+	                	<span class="">Aggressive behavior modification</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogTrainPack" value="" checked="">
+	                	<span class="">General obedience training</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="dogTrainPack" value="" checked="">
+	                	<span class="">Therapy or service dog training</span>
+	            	</label>
+	    		</div>
+	    	</div>
+
+			<div class="mDogNum dogTrainPack coatType">
+				<div class="mDogNum-title form-title">
+					Which of these best describes your dog's coat type?
+				</div>
+
+				<div class="mDogNum-box dogTrainPack-box coatType">
+		    		<label class="labelCheck">
+	                	<input type="radio" name="coatType" value="" checked="">
+	                	<span class="">Smooth, skin-like coat</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="coatType" value="" checked="">
+	                	<span class="">Wavy or curly coat</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="coatType" value="" checked="">
+	                	<span class="">Silky coat with fine hair</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="coatType" value="" checked="">
+	                	<span class="">Wiry, bristly coat</span>
+	            	</label>
+		    		<label class="labelCheck">
+	                	<input type="radio" name="coatType" value="" checked="">
+	                	<span class="">Thick, fluffy double-coat</span>
+	            	</label>
+	    		</div>
+	    	</div>
+
+
+	    	<div class="filterBtm">
+
+	    			<button type="button" class="SearchBtn" onclick = "filter()"> Search </button>
+
+	    	</div>
+
+
+		<!-- </div> -->
+		</fieldset> 
+
+		
+		<div class="SearchPanel">
+			<a id="SearchBotton" onclick = "filter()">
+				Search 
+			</a>
+
+		</div>
+
+	</div>
+
+
+	<div id="tFilter">
+		
+	</div>
+
+
+	<div id="dFilter">
+		
+	</div>
+
+
+
+	<div id="ProviderPanel">
+
+		<div class="proCard" id="user1">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user1.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">1.</span>
+						<span itemprop="name" class="firstName">
+							Nikki
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						Capitol Hill, Seattle, WA, 98102
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>10
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+
+		<div class="proCard" id="user2">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user2.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">2.</span>
+						<span itemprop="name" class="firstName">
+							Mary
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						Central District, Seattle, WA, 98122
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>12
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="proCard" id="user3">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user3.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">3.</span>
+						<span itemprop="name" class="firstName">
+							Jamie
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						South Lake Union, Seattle, WA, 98109
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>15
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>		
+
+		<div class="proCard" id="user4">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user4.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">4.</span>
+						<span itemprop="name" class="firstName">
+							Charlie
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						First Hill, Seattle, WA, 98101
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>16
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="proCard" id="user5">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user5.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">1.</span>
+						<span itemprop="name" class="firstName">
+							Diana
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						Belltown, Seattle, WA, 98121
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>12
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="proCard" id="user6">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user6.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">1.</span>
+						<span itemprop="name" class="firstName">
+							Anthony
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						Belltown, Seattle, WA, 98121
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>16
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div class="proCard" id="user7">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user7.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">1.</span>
+						<span itemprop="name" class="firstName">
+							Scott
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						First Hill, Seattle, WA, 98101
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>30
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+		<div class="proCard" id="user8">
+			<a class="proLink" href="ProviderDetail.html"></a>
+
+			<div class="proPic">
+				<div class="proImg">
+					<img src="./Images/Pros/user8.png">
+				</div>
+
+			</div>
+
+			<div class="proCardBody">
+
+				<div itemscope itemtype="http://schema.org/Person" class="proInfo">
+
+					<div class="proName">
+						<span class="search-index">1.</span>
+						<span itemprop="name" class="firstName">
+							Vivian
+						</span>
+					</div>
+
+					<div itemprop="address" class="address">
+						Capitol Hill, Seattle, WA, 98102
+					</div>
+
+					<div class="proReview">
+						<div class="reviewTag">
+							2 reviews
+						</div>
+						<div class="reviewStar">
+							<!-- <img src="Images/icons/star.svg"> -->
+							5 stars
+						</div>
+					</div>
+
+				</div>
+
+				<div class="proPrice">
+					<div class="fromText-small">
+						from
+					</div>
+
+					<div class="priceTag">
+						<span>$</span>15
+					</div>
+
+					<div class="UnitText-small">
+						per hour
+					</div>
+
+				</div>
+
+			</div>
+
+
+		</div>
+		
+	</div>
+
+	</div>
+   <div class="footer">
+			
+			<div class="footer-item footer-logo">
+			<div class="footer-fulllogo">
+			<img class="logo" src="./Images/icons/logo.svg">FS
+			</div>
+			<div class="social-container">
+			<a href=""><img class="social" src="./Images/icons/facebook.svg" target="_blank"></a>
+			<a href=""><img class="social" src="./Images/icons/twitter.svg" target="_blank"></a>
+			<a href=""><img class="social" src="./Images/icons/google-plus.svg" target="_blank"></a>
+			</div>
+			</div>
+			<div class="footer-item footer-section">
+			<h2>Contact</h2>	
+			<p><a href="mailto:xylocato@gmail.com">fantasticservice@gmail.com</a></p>
+			<p>(617)269-6770</p>
+			<p>225 Terry Ave, Seattle WA </p>
+			</div>
+			<div class="footer-item footer-section">
+		    <h2>About</h2>
+		    <p><a href="http://www.northeastern.edu/seattle/" target="_blank">Northeastern University - Seattle</a></p>
+		     <p><a href="http://seanwebs.s3-website-us-west-2.amazonaws.com" target="_blank">Sheng Sun</a>&nbsp;|&nbsp;<a href="http://zeyuan.li" target="_blank">Zeyuan Li</a></p>
+		      <p><a href="http://www.northeastern.edu/seattle/" target="_blank">Xiaotong Chen</a>&nbsp;|&nbsp;<a href="http://www.northeastern.edu/seattle/" target="_blank">Zhikun Xu</a></p>
+            </div>
+			</div>
+
+	</body>
+</html>

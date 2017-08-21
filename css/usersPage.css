@@ -1,0 +1,243 @@
+.main-header{
+  width: 100%;
+  height: 10vh;
+  color: white;
+  background: #49bcab;
+}
+
+.main-header  .h1container{
+  width: 70vw;
+  height: 10vh;
+
+  float: left;
+
+  display: -webkit-flex;
+  text-align: left;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.main-header h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  float: left;
+  font-size: 5vmin;
+  margin: 0 0 0 2rem;
+  text-transform: uppercase;
+  color: #ffb838;
+  }
+
+
+.loginBtnContainer{
+  width: 20vw;
+  height: 10vh;
+
+  float: right;
+
+  display: -webkit-flex;
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+
+.loginBtn{
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    font-size: 4vmin;
+    background-color: #49bcab;
+    color: #ffdb99;
+
+    cursor: pointer;
+    border-radius: 50px;
+    border: 2px solid #ffdb99;
+
+    width: 80%;
+    margin:0 auto;
+}
+
+/*  header login出来的登陆界面 */
+/*  header login出来的登陆界面 */
+/*  header login出来的登陆界面 */
+
+.submitBtn{
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  width: 16vw;
+  height: 5vh;
+  margin-left: 40%;
+  font-size:5px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid #ffb838;
+  background-color: #fff;
+  color: #ffb838;
+  
+}
+
+.main-headerh1{
+  font-size: 10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+span .psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    font-family: "Lato", Helvetica, Arial, sans-serif;
+    background-color: #fefefe;
+    margin: 0 auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 70%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
+
+
+
+/* 手机横屏 */
+/* 手机横屏 */
+/* 手机横屏 */
+@media screen   and (min-width: 420px) {
+.loginBtnContainer{
+  width: 12vw;
+}
+
+}
+
+
+/*大屏手机和平板电脑竖屏（width > 421 px） 比如nexus6p, nexus7 和 iPad*/
+/*大屏手机和平板电脑竖屏（width > 421 px） 比如nexus6p, nexus7 和 iPad*/
+/*大屏手机和平板电脑竖屏（width > 421 px） 比如nexus6p, nexus7 和 iPad*/
+
+@media screen   and (min-width: 421px) 
+                and (orientation: portrait){
+
+.loginBtnContainer{
+  width: 16vw;
+  height: 10vh;
+
+  float: right;
+
+  display: -webkit-flex;
+  text-align: center;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+}
+
+
+
+
+
+/*桌面版*/
+/*桌面版*/
+/*桌面版*/
+@media screen and (min-width: 1024px){
+  
+  .main-header h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: bold;
+  float: left;
+  font-size: 28px;
+  margin: 0 0 0 2rem;
+  text-transform: uppercase;
+  color: #ffb838;
+  }
+
+.loginBtnContainer{
+  width: 10vw;
+  height: 10vh;
+
+}
+
+.loginBtn{
+    font-size: 3vmin;
+}
+
+}
+

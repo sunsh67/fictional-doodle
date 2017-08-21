@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Fantastic Service | Homepage</title>
+		<link rel="stylesheet" type="text/css" href="css/home.css">
+		<link rel="stylesheet" type="text/css" href="css/headerfooter.css">
+		<link rel="stylesheet" type="text/css" href="css/w3css.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">	
+		<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/homepage.js"></script> 
+		<script type="text/javascript" src="js/cookie.js"></script> 
+       
+	</head>
+
+
+		<body>
+
+			<header class="main-header">
+			    <div class="fulllogo">
+			    <img id= "logo" src="./Images/icons/logo.svg">
+			    <strong>FS</strong>
+			    </div>
+				<div id="userInfo"></div>
+				<div class="loginBtnContainer" id = "showName"><button id = "log" class="loginBtn">Login</button></div>
+			<div class="modal"  id = "loginForm">
+  
+  <form class="modal-content animate" action="">
+    <div class="imgcontainer">
+      <span class="close" title="Close Modal" id="closeIcon">&times;</span>
+      <div class="madal-tittle"><div id="f">F</div>antastic <div id="f">S</div>ervice</div>
+    </div>
+
+    <div class="container">
+
+      <input type="text" placeholder="Enter Your Email" name="email" id = "useremail" required>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="button" class="submitBtn" onclick = "setLoginCookie()">Login</button>
+    </div>
+  </form>
+</div>
+           </header>
+
+
+
+
+			<div id="welcomePage" class="multiply">
+				<h2><div id="f">F</div>antastic <div id="f">S</div>ervice</h2>
+                <div class="h3-container">
+
+                </div>
+				<div class="button-contianer">
+    				<a href="#linktohowitworks"><div class="button">How It Works</div></a>
+    			</div>
+                <div id="arrow"><a href="#linktohowitworks"><img class="arrow-down" src="./Images/icons/down-arrow.svg"></a></div>
+       		</div>
+
+			
+
+            <div class="howitworks-section">
+			<a id="linktohowitworks"></a>
+			<div id="howitworks">
+				<h1>How It Works</h1>	
+                <h2 id="easysteps">Easy 3 Steps !</h2>
+				<div class="steps_outer">
+					<div class="steps_inner">
+					   <div id="stepOne" style="display: none;">
+						<div class="numbersPicWrapper"><img src="./Images/icons/one.svg" class="numbersPic"></div>
+						<p>Select One Category</p>
+						</div>
+					</div>
+				
+					<div class="steps_inner">
+					    <div id="stepTwo" style="display: none;">
+						<div class="numbersPicWrapper"><img src="./Images/icons/two.svg" class="numbersPic"></div>
+						<p>By Yourself or Find Helpers</p>
+						</div>
+					</div>
+				
+					<div class="steps_inner">
+					<div id="stepThree" style="display: none;">
+						<div class="numbersPicWrapper"><img src="./Images/icons/three.svg" class="numbersPic"></div>
+						<p>Problem Solved!</p>	
+					</div>
+					</div>
+				</div>
+
+			</div>
+          </div>
+          <div class="category-section">
+            <div id="categoryHeadline"> Step 1 : Selet Your Category</div>
+           
+			<div id="category">
+
+				<div class="outer">
+
+					<div class="inner" id="1">
+						<div  class="categoryPicWrapper">
+						<a href="ServiceDetail-dogWalking.html" class="serviceLink" target="_blank"><img id="dogWalkingicon" src="./Images/icons/dogWalking.svg" class="categoryPic"></div><p id="walking">Dog Walking</p></a>
+					</div>
+
+					<div class="inner" id="2">
+						<div class="categoryPicWrapper">
+						<a href="ServiceDetail-dogTraining.html" class="serviceLink" target="_blank">
+							<img id="dogTrainingicon"  src="./Images/icons/dogTraining.svg"  class="categoryPic"></div><p id="training">Dog Training</p>
+						</a>
+					</div>
+
+					<div class="inner" id="3">
+						<div class="categoryPicWrapper">
+						<a href="ServiceDetail-dogFeeding.html" class="serviceLink" target="_blank"><img id="dogFeedingicon"  src="./Images/icons/dogFeeding.svg" class="categoryPic"></div><p id="feeding">Dog Feeding</p></a>
+					</div>
+
+					<div class="inner" id="4">
+						<div class="categoryPicWrapper">
+						<a href="ServiceDetail-dogGrooming.html" class="serviceLink" target="_blank"><img id="dogGroomingicon" src="./Images/icons/dogGrooming.svg" class="categoryPic"></div><p id="grooming">Dog Grooming</p></a>
+					</div>
+
+				</div>
+                
+			</div>
+             </div>
+			<div class="footer">
+			
+			<div class="footer-item footer-logo">
+			<div class="footer-fulllogo">
+			<img class="logo" src="./Images/icons/logo.svg">FS
+			</div>
+			<div class="social-container">
+			<a href=""><img class="social" src="./Images/icons/facebook.svg" target="_blank"></a>
+			<a href=""><img class="social" src="./Images/icons/twitter.svg" target="_blank"></a>
+			<a href=""><img class="social" src="./Images/icons/google-plus.svg" target="_blank"></a>
+			</div>
+			</div>
+			<div class="footer-item footer-section">
+			<h2>Contact</h2>	
+			<p><a href="mailto:xylocato@gmail.com">fantasticservice@gmail.com</a></p>
+			<p>(617)269-6770</p>
+			<p>225 Terry Ave, Seattle WA </p>
+			</div>
+			<div class="footer-item footer-section">
+		    <h2>About</h2>
+		    <p><a href="http://www.northeastern.edu/seattle/" target="_blank">Northeastern University - Seattle</a></p>
+		     <p><a href="http://seanwebs.s3-website-us-west-2.amazonaws.com" target="_blank">Sheng Sun</a>&nbsp;|&nbsp;<a href="http://zeyuan.li/" target="_blank">Zeyuan Li</a></p>
+		      <p><a href="http://www.northeastern.edu/seattle/" target="_blank">Xiaotong Chen</a>&nbsp;|&nbsp;<a href="http://www.northeastern.edu/seattle/" target="_blank">Zhikun Xu</a></p>
+            </div>
+			</div>
+             
+		</body>	
+</html>
